@@ -8,19 +8,6 @@ authors = glob.glob("../datasets/wapo/*")
 authors.sort()
 df_dict = {"author":[], "link":[], "article":[]}
 
-# browser = webdriver.Firefox(executable_path="/home/green/Downloads/geckodriver-v0.30.0-linux64/geckodriver")
-# browser.implicitly_wait(15)
-
-# browser.get('https://www.washingtonpost.com/subscribe/signin/')
-# browser.find_element_by_id("username").send_keys('arthurbrox69@gmail.com')
-# browser.find_element_by_xpath('/html/body/div[2]/div/div/div[1]/div[2]/form/button').click()
-# browser.find_element_by_id("password").send_keys('temp_pass_123')
-# browser.find_element_by_xpath('/html/body/div[2]/div/div/div[1]/div[2]/form/button').click()
-
-
-
-
-
 for author_file in authors:
     author_name = " ".join(author_file.split('/')[-1][:-4].split('-'))
     print(author_name)
